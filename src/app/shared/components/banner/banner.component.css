@@ -1,9 +1,16 @@
 .banner{
   width: 100%;
-  height: 34vh;
+  height: 36vh;
   background-color: brown;
   display: flex;
   align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bannerServices{
+  background: linear-gradient(to top, rgba(10, 19, 40, 0.9),rgba(10, 19, 40, 0.9)),url('https://www.cronica.com.ar/__export/1587317027766/sites/cronica/img/2020/04/19/medico-nota_crop1587316941743.jpg_543804098.jpg');
 }
 
 .banner-title{
