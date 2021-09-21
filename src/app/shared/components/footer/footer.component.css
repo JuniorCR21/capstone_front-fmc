@@ -1,0 +1,158 @@
+.footer{
+  width: 100%;
+  background-color: #0B152A;
+  color: #fff;
+  background: linear-gradient(to top, rgba(10, 19, 40, 0.9),rgba(10, 19, 40, 0.9)),url('../../../../assets/img/footer/fondo.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item-footer{
+  display: flex;
+}
+
+.item{
+  width: 33%;
+  padding-right: 1%;
+}
+
+.item:nth-child(n+2){
+  padding-left: 5%;
+}
+
+
+.item .img img{
+  width: 100px;
+}
+
+.item-title{
+  font-size: 16px;
+  color: #eeeeee;
+  font-weight: 400;
+}
+
+.item-text{
+  padding: 0;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 300;
+  color: #aaaaaa;
+  line-height: 26px;
+}
+
+.item-ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-ul .item-li{
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  line-height: 26px;
+}
+
+.item-ul .item-li:hover{
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all .3s ease-in-out;
+}
+
+.item-ul .item-li i{
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+.item .item-contact{
+  text-decoration: none;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+.item .item-contact:hover{
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all .3s ease-in-out;
+}
+
+.item .icons a{
+  color: #aaaaaa;
+  font-size: 25px
+}
+
+.item .icons a:hover{
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+
+hr{
+  margin: 0;
+  width: 100%;
+  background-color: rgba(170, 170, 170, 0.3);
+}
+
+.finally-footer{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.finally-footer__text{
+  margin: 0;
+  width: 100%;
+  color: #aaaaaa;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.finally-footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+@media only screen and (min-width:768px) and (max-width:1022px){
+
+  .item-footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item:nth-child(1){
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .item:nth-child(n+2){
+    width: 50%;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width:767px){
+  .item-footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item{
+    width: 100%;
+    margin-bottom: 30px;
+    padding-left: 0;
+  }
+
+  .item:nth-child(1){
+    padding: 0 5%;
+  }
+
+  .item:nth-child(n+2){
+    text-align: center;
+  }
+
+}
