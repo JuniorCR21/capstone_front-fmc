@@ -3,13 +3,20 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.css']
+  styleUrls: ['./banner.component.css'],
 })
 export class BannerComponent implements OnInit {
+  title = '';
+  rutas = {
+    '/servicios': 'Servicios',
+    '/nosotros': 'Nosotros',
+    '/capacitaciones': 'Capacitaciones',
+    '/contacto': 'Contacto',
+  };
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+    this.title = this.rutas[location.pathname];
   }
-
 }
