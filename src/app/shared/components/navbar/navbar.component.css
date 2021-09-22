@@ -1,0 +1,8 @@
+.nav-link {
+    border-bottom: 5px solid transparent;
+  }
+  
+  .nav-link:hover {
+    border-bottom: 5px solid blue;
+  }
+  
