@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +8,21 @@ import {Router} from '@angular/router';
 })
 export class AppComponent implements OnInit{
 
-  bannerActive = false;
+  bannerActive:Boolean=false;
   constructor(private router:Router){
   }
 
-
   ngOnInit(): void {
-    console.log(location.pathname)
-    if(location.pathname != '/'){
-      this.bannerActive = true;
-    }
+    this.router.events.forEach((event) => {
+      if(event instanceof NavigationEnd) {
+        console.log(location.pathname)
+        if(location.pathname != '/'){
+          this.bannerActive = true;
+        }else{
+          this.bannerActive=false;
+        }
+      }
+    });
   }
-
 
 }
