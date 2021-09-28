@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-banner',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.css'],
 })
 export class BannerComponent implements OnInit {
+  @Input() set path(_path: any){
+    this.title = this.rutas[_path];
+    this.banner = this.imgs[_path];
+  }
   title = '';
   banner = '';
   rutas = {
@@ -21,10 +26,8 @@ export class BannerComponent implements OnInit {
     '/contacto': 'banner bannerContact',
   }
 
-  constructor() {}
-
+  constructor(private router:Router) {}
   ngOnInit(): void {
-    this.title = this.rutas[location.pathname];
-    this.banner = this.imgs[location.pathname];
+
   }
 }

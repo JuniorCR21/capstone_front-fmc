@@ -7,7 +7,7 @@ import { NavigationEnd, NavigationStart, Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-
+  path = "";
   bannerActive:Boolean=false;
   constructor(private router:Router){
   }
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     this.router.events.forEach((event) => {
       if(event instanceof NavigationEnd) {
-        console.log(location.pathname)
+        this.path= location.pathname
         if(location.pathname != '/'){
           this.bannerActive = true;
         }else{

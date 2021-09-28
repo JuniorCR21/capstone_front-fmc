@@ -1,46 +1,58 @@
-.title{
+.title {
   font-weight: 600;
-  color: 1D2B4F;
+  color: #1d2b4f;
 }
 .text {
-  color:#AAAAAA;
-font-weight: 300;
-align-content: center;
+  color: #aaaaaa;
+  font-weight: 300;
+  align-content: center;
+  font-size: 14px;
 }
-.imagenD{
+
+.text-content {
+  font-size: 14px;
+}
+
+.imagenD {
   width: 450px;
 }
 
-.textSub{
-color: #AAAAAA;
+.textSub {
+  color: #aaaaaa;
 }
 
-.textMed{
-  color: #AAAAAA;
+.textMed {
+  color: #aaaaaa;
 }
-.primera{
+.primera {
   width: 100%;
-  padding: 5% 8%;
-background:linear-gradient(to top, rgba(9, 166, 243, 0.8),rgba(9, 166, 243, 0.8)), url('../../../assets/img/about/mision.jpg');
+  padding: 6% 8%;
+  background: linear-gradient(
+      to top,
+      rgba(9, 166, 243, 0.85),
+      rgba(9, 166, 243, 0.85)
+    ),
+    url("../../../assets/img/about/mision.jpg");
 }
-.segunda{
+
+.segunda {
   width: 100%;
-  padding: 5% 8%;
-  background: linear-gradient(to top, rgba(10, 133, 237, 0.8),rgba(10, 133, 237, 0.8)), url(../../../assets/img/about/vision.jpg);
+  padding: 6% 8%;
+  background: linear-gradient(
+      to top,
+      rgba(10, 133, 237, 0.85),
+      rgba(10, 133, 237, 0.85)
+    ),
+    url(../../../assets/img/about/vision.jpg);
 }
-.titleMision{
-  color: aliceblue;
-}
-.text1{
-color: aliceblue;
-}
-
-.text2{
-  color: aliceblue;
-
+.titleMV {
+  color: #fff;
+  font-weight: 600;
 }
 
-.titleVision{
-  color: aliceblue;
-
+.textMV {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
 }
