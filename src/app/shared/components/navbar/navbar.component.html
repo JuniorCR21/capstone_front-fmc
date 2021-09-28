@@ -1,27 +1,82 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#" >
-          <img src="../../../../assets/img/logo/logo.svg" alt="" width="82" height="82">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div id="myTab" class="navbar-nav m-auto">
-          <a class="nav-link active" routerLinkActive="router-link-active" (click)="inicio()">Inicio</a>
-          <a class="nav-link" routerLinkActive="router-link-active" (click)="nosotros()">Nosotros</a>
-          <a class="nav-link" routerLinkActive="router-link-active" (click)="servicios()">Servicios</a>
-          <a class="nav-link" routerLinkActive="router-link-active" (click)="capacitaciones()">Capacitaciones</a>
-          <a class="nav-link" routerLinkActive="router-link-active" (click)="contactanos()">Contáctanos</a>
-        </div>
-        <div  class="d-grid gap-2">
-            <button type="button" class="btn btn-primary btn-lg px-5">Login</button>
-        </div>
+<div class="pre-nav">
+
+</div>
+<nav class="navbarLg sticky-top shadow">
+  <div class="container content-navbar">
+    <img
+      class="logo"
+      src="../../../../assets/img/logo/logo.svg"
+      alt="Logo Family Medical Center"
+    />
+    <div class="item-nav">
+      <div class="div-nav text-center">
+        <a routerLink="">Home</a>
+        <div class="activo" *ngIf="ruta === '/'"></div>
+        <div class="circle" *ngIf="ruta !== '/'"></div>
+      </div>
+      <div class="div-nav">
+        <a routerLink="/nosotros">Nosotros</a>
+        <div class="activo" *ngIf="ruta === '/nosotros'"></div>
+        <div class="circle" *ngIf="ruta !== '/nosotros'"></div>
+      </div>
+      <div class="div-nav">
+        <a routerLink="/servicios">Servicios</a>
+        <div class="activo" *ngIf="ruta === '/servicios'"></div>
+        <div class="circle" *ngIf="ruta !== '/servicios'"></div>
+      </div>
+      <div class="div-nav">
+        <a routerLink="/capacitaciones">Capacitaciones</a>
+        <div class="activo" *ngIf="ruta === '/capacitaciones'"></div>
+        <div class="circle" *ngIf="ruta !== '/capacitaciones'"></div>
+      </div>
+      <div class="div-nav">
+        <a routerLink="/contacto">Contacto</a>
+        <div class="activo" *ngIf="ruta === '/contacto'"></div>
+        <div class="circle" *ngIf="ruta !== '/contacto'"></div>
       </div>
     </div>
-    
-    
-  </nav>
+    <button class="btn btn-primary btn-sm">Iniciar Sesión</button>
+  </div>
+</nav>
 
-
-  
+<nav
+  class="
+    navbar navbar-expand-lg
+    sticky-top
+    navbar-light
+    bg-white
+    d-md-none d-lg-none d-xl-none
+    shadow
+  "
+>
+  <div class="container">
+    <a class="navbar-brand" routerLink="">
+      <img
+        class="logo"
+        src="../../../../assets/img/logo/logo.svg"
+        alt="Logo Family Medical Center"
+      />
+    </a>
+    <button
+      class="navbar-toggler navbar-sm-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link mt-3" routerLink="">Home</a>
+        <a class="nav-link" routerLink="/nosotros" routerLinkActive="active">Nosotros</a>
+        <a class="nav-link" routerLink="/servicios" routerLinkActive="active">Servicios</a>
+        <a class="nav-link" routerLink="/capacitaciones" routerLinkActive="active">Capacitaciones</a>
+        <a class="nav-link" routerLink="/contacto" routerLinkActive="active">Contacto</a>
+      </div>
+      <button class="btn btn-primary mt-2 mb-3">Iniciar Sesión</button>
+    </div>
+  </div>
+</nav>

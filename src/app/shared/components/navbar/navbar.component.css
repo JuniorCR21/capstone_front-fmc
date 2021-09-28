@@ -1,8 +1,110 @@
-.nav-link {
-    border-bottom: 5px solid transparent;
+.pre-nav{
+  width: 100%;
+  height: 16px;
+  background: rgba(255,94,31,1);
+  background: -moz-linear-gradient(-45deg, rgba(60, 178, 231,1) 0%, rgba(60, 178, 231,1) 50%, rgba(9, 131, 196,1) 50%, rgba(9, 131, 196,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(60, 178, 231,1)), color-stop(50%, rgba(60, 178, 231,1)), color-stop(50%, rgba(9, 131, 196,1)), color-stop(100%, rgba(9, 131, 196,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(60, 178, 231,1) 0%, rgba(60, 178, 231,1) 50%, rgba(9, 131, 196,1) 50%, rgba(9, 131, 196,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(60, 178, 231,1) 0%, rgba(60, 178, 231,1) 50%, rgba(9, 131, 196,1) 50%, rgba(9, 131, 196,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(60, 178, 231,1) 0%, rgba(60, 178, 231,1) 50%, rgba(9, 131, 196,1) 50%, rgba(9, 131, 196,1) 100%);
+  background: linear-gradient(135deg, rgba(60, 178, 231,1) 0%, rgba(60, 178, 231,1) 50%, rgba(9, 131, 196,1) 50%, rgba(9, 131, 196,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3cb2e7', endColorstr='#0983c4', GradientType=1 );
+  color: white;
+}
+
+.navbarLg{
+  background-color: #fff;
+  padding: 1% 0;
+}
+.logo{
+  width: 65px;
+}
+
+.navbarLg .item-nav a{
+  color: rgb(139, 139, 139);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.div-nav{
+  display: inline-block;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.navbarLg .item-nav .div-nav a{
+  text-decoration: none;
+}
+
+.navbarLg .item-nav .div-nav:hover a{
+  color: #3F3D56;
+  transition: .2s all ease-in-out;
+}
+
+.navbarLg .item-nav .div-nav:hover .circle{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border-color: #fff;
+  background-color: #3CB2E7;
+  position: relative;
+  left: 48%;
+  animation: 1s animationCircle infinite;
+}
+
+@keyframes animationCircle {
+
+  0%{
+    width: 2px;
+    height: 2px;
   }
-  
-  .nav-link:hover {
-    border-bottom: 5px solid blue;
+  50%{
+    width: 8px;
+    height: 8px;
   }
-  
+  100%{
+    width: 2px;
+    height: 2px;
+  }
+}
+
+.navbarLg .item-nav .div-nav .activo{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border-color: #fff;
+  background-color: #215FE9;
+  position: relative;
+  left: 48%;
+}
+
+
+.content-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn{
+  background-color: #215FE9;
+  padding: 5px 18px;
+}
+
+@media only screen and (max-width:767px){
+  .navbarLg{
+    display: none;
+  }
+
+  .navbar .navbar-nav .active::after{
+    content: '';
+    width: 8%;
+    height: 2px;
+    background-color: #215FE9;
+    display: block;
+  }
+
+  .pre-nav{
+    height: 10px;
+  }
+
+}

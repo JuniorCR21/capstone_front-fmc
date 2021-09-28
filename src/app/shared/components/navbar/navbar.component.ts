@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,31 +9,14 @@ import { Router } from '@angular/router';
 })
 
 export class NavbarComponent implements OnInit {
+  ruta = '';
+  @Input() set path(_path: any){
+    this.ruta = _path;
+  }
 
   constructor(private router: Router) { }
-  
+
 
   ngOnInit(): void {
   }
-
-  inicio() {
-    this.router.navigate(['/inicio']);
-  }
-
-  nosotros() {
-    this.router.navigate(['/nosotros']);
-  }
-
-  servicios() {
-    this.router.navigate(['/servicios']);
-  }
-
-  capacitaciones() {
-    this.router.navigate(['/capacitaciones']);
-  }
-
-  contactanos() {
-    this.router.navigate(['/contacto']);
-  }
-  
 }
