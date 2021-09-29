@@ -7,6 +7,9 @@ import { NavigationEnd, NavigationStart, Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   path = "";
   bannerActive:Boolean=false;
   constructor(private router:Router){
