@@ -42,6 +42,10 @@ label{
   font-size: 14px;
 }
 
+.btn:hover{
+  background-color: #0054a8;
+}
+
 .contact .fondoContact{
   margin: 0;
   background-image: url('https://micarrerauniversitaria.com/wp-content/uploads/2018/03/medicina-preventiva-7.jpg');
