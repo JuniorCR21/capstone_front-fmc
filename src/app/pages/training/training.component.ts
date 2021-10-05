@@ -24,7 +24,7 @@ export class TrainingComponent implements OnInit {
       name: ['',Validators.required],
       phone: ['',[Validators.required]],
       empresa: ['',[Validators.required]],
-      rubro: ['', [ Validators.required]],
+      rubro: [''],
       provincia: [''],
       message: ['']
     })
