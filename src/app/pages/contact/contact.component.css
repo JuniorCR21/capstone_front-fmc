@@ -2,6 +2,14 @@ input{
   font-size: 14px;
 }
 
+label{
+  font-size: 15px;
+}
+
+.form-control{
+  font-size: 15px;
+}
+
 .title-contact{
   font-weight: 600;
   margin-bottom: 15px;

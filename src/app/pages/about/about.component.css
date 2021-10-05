@@ -2,28 +2,28 @@
   font-weight: 600;
   color: #1d2b4f;
 }
-.text {
-  color: #aaaaaa;
+.text-content-about {
+  color: #797979;
   font-weight: 300;
-  align-content: center;
+  font-size: 14px;
+}
+
+.text-about{
+  color: #0575E6;
   font-size: 14px;
 }
 
 .text-content {
+  color: #1d2b4f;
+  font-weight: 600;
   font-size: 14px;
 }
 
+
 .imagenD {
-  width: 450px;
+  width: 410px;
 }
 
-.textSub {
-  color: #aaaaaa;
-}
-
-.textMed {
-  color: #aaaaaa;
-}
 .primera {
   width: 100%;
   padding: 6% 8%;
@@ -45,6 +45,7 @@
     ),
     url(../../../assets/img/about/vision.jpg);
 }
+
 .titleMV {
   color: #fff;
   font-weight: 600;
@@ -56,3 +57,23 @@
   font-weight: 300;
   line-height: 24px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+  .imagenD {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  .imagenD {
+    margin-top: 26px;
+    width: 280px;
+  }
+
+  .content-img{
+    text-align: center;
+  }
+}
+
