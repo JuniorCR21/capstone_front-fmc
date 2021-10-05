@@ -1,6 +1,12 @@
-.training{
-  background-color: #F4F7FC;
+.modal-content{
+  border-radius: 0;
+  transition: .3s all ease-in-out;
 }
+
+.modal-content img{
+  height: 48vh;
+}
+
 
 .icon img{
   width: 40px;
@@ -32,8 +38,18 @@
 }
 
 .btn{
+  color: #fff;
   border-radius: 0;
   background-color: #0575E6;
+  font-size: 14px;
+}
+
+input, textarea{
+  font-size: 14px;
+}
+
+label{
+  font-size: 15px;
 }
 
 .card-body{
@@ -41,6 +57,7 @@
 }
 
 .enterprise{
+  background-color: #F4F7FC;
   width: 100%;
 }
 
@@ -53,6 +70,31 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.cotizacion .content-img {
+  display: flex;
+  align-items: flex-end;
+}
+
+.cotizacion .content-img img{
+  width: 480px;
+}
+
+.cotizacion .title-cotiza{
+  font-weight: 600;
+  color: #1d2b4f;
+}
+
+.cotizacion .title-cotiza::after{
+  content: '';
+  display: block;
+  height: 3px;
+  width: 8%;
+  position: relative;
+  top: 5px;
+  left: 4%;
+  background-color: #0575E6;
 }
 
 @keyframes animationLogo1 {
@@ -100,6 +142,19 @@
   }
 }
 
+
+@media screen and (min-width: 1000px) and (max-width: 1150px){
+  .cotizacion .content-img img{
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 999px){
+  .cotizacion .content-img img{
+    width: 400px;
+  }
+}
+
 @media screen and (max-width: 767px){
 
   .enterprise .logo:nth-child(1){
@@ -110,6 +165,18 @@
   }
   .enterprise .logo:nth-child(3){
     animation: 6s animationLogo3  infinite ease-out;
+  }
+
+  .modal-content img{
+    height: 40vh;
+  }
+
+  .cotizacion .content-img{
+    justify-content: center;
+  }
+
+  .cotizacion .content-img img{
+    width: 300px;
   }
 
 }

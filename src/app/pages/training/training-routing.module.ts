@@ -5,7 +5,12 @@ import { TrainingComponent } from './training.component';
 const routes: Routes = [
   {
     path:'',
-    component: TrainingComponent
+    children:[
+      {
+        path: '',
+        component:TrainingComponent
+      }
+    ]
   }
 ];
 
