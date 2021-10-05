@@ -1,0 +1,115 @@
+.training{
+  background-color: #F4F7FC;
+}
+
+.icon img{
+  width: 40px;
+}
+
+.title{
+  font-weight: 600;
+}
+
+.title-training{
+  font-weight: 600;
+}
+
+.title::after{
+  content: '';
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 10%;
+  background-color: #0575e6;
+  top: 4px;
+  left: 45%;
+}
+
+.text-content{
+  color: #797979;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.btn{
+  border-radius: 0;
+  background-color: #0575E6;
+}
+
+.card-body{
+  border-radius: 0;
+}
+
+.enterprise{
+  width: 100%;
+}
+
+.enterprise .logo{
+  width: 100px;
+}
+
+.enterprise .content-logo{
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@keyframes animationLogo1 {
+  0%{
+    width: 100px;
+  }
+  35%{
+    width: 0px;
+  }
+  75%{
+    width: 0px;
+  }
+  100%{
+    width: 100px;
+  }
+}
+
+@keyframes animationLogo2 {
+  0%{
+    width: 0px;
+  }
+  35%{
+    width: 100px;
+  }
+  75%{
+    width: 0px;
+  }
+  100%{
+    width: 0px;
+  }
+}
+
+@keyframes animationLogo3 {
+  0%{
+    width: 0px;
+  }
+  35%{
+    width: 0px;
+  }
+  75%{
+    width: 100px;
+  }
+  100%{
+    width: 0px;
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  .enterprise .logo:nth-child(1){
+    animation: 6s animationLogo1  infinite ease-out;
+  }
+  .enterprise .logo:nth-child(2){
+    animation: 6s animationLogo2  infinite ease-out;
+  }
+  .enterprise .logo:nth-child(3){
+    animation: 6s animationLogo3  infinite ease-out;
+  }
+
+}
