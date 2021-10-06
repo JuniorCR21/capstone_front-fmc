@@ -1,45 +1,91 @@
 .title{
-  color: deepskyblue;
+  color: #1d2b4f;
+  font-weight: 600;
 }
+
+.section-par{
+  background-color: #f2f5fa;
+}
+
+.btn{
+  background-color: #215FE9;
+  color: #fff;
+  margin-left: 12px;
+  border-radius: 0;
+}
+
+.btn:hover{
+  background-color: #0841bd;
+}
+
+.title::after{
+  content: '';
+  background-color: #215FE9;
+  display: block;
+  height: 2px;
+  width: 6%;
+  position: relative;
+  left: 47%;
+  top: 10px;
+}
+
 .texto{
-  color: #aaaaaa;
+  font-size: 15px;
+  font-weight: 300;
+  color: #777777;
 }
 
-.psico {
-  color: deepskyblue;
+.texto:nth-child(n+2){
+  padding-left: 12px;
 }
 
-.text1{
-  color: #aaaaaa;
-}
-.vigilancia{
-  color: deepskyblue;
-}
-
-.text2{
-  color: #aaaaaa;
+.subtitle{
+  font-weight: 600;
+  border-left: 3px solid #215FE9;
+  padding-left: 8px;
+  color: #1d2b4f;
 }
 
-.cuidados{
-  color: deepskyblue;
+section .imagenD{
+  width: 340px;
 }
 
-.adminMedicamento{
-  color: deepskyblue;
+@media only screen and (min-width:768px) and (max-width:999px){
+  section .imagenD{
+    width: 300px;
+  }
 }
 
-.enfermeria{
-  color: deepskyblue;
+@media only screen and (max-width:767px){
+
+  .subtitle{
+    text-align: center;
+  }
+
+  .content-par{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .texto:nth-child(n+1){
+    padding-left: 0;
+  }
+
+  .subtitle{
+    padding-left: 0;
+    border: 0;
+    font-size: 20px;
+  }
+
+  section .imagenD{
+    width: 240px;
+    margin-top: 24px;
+  }
+
+  .btn{
+    margin-left: 0;
+  }
 }
 
-.electrocardiograma{
-  color: deepskyblue;
-}
-.ecografia{
-  color: deepskyblue;
-}
 
-.rayos{
-  color: deepskyblue;
-}
 
