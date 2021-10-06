@@ -126,6 +126,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "capstone-fmc-app"
 }
