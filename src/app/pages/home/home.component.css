@@ -115,6 +115,27 @@
   font-weight: 600;
 }
 
+.services .subtitle{
+  font-weight: 600;
+}
+
+.services .subtitle::after{
+  content: '';
+  display: block;
+  position: relative;
+  height: 2px;
+  width:8%;
+  background-color: #0575E6;
+  left: 45%;
+  top: 8px;
+}
+
+.services .text-services{
+  font-size: 15px;
+  font-weight: 300;
+  color: #777777;
+}
+
 .card{
   border-radius: 0;
   position: relative;
