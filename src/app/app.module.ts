@@ -8,6 +8,7 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { BannerComponent } from './shared/components/banner/banner.component';
 import { ToastrModule } from 'ngx-toastr';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ToastrModule } from 'ngx-toastr';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
