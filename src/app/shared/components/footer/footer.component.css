@@ -70,12 +70,11 @@
   text-decoration: none;
   color: #aaaaaa;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .item .item-contact:hover{
   color: #fff;
-  cursor: pointer;
-  font-size: 15px;
   transition: all .3s ease-in-out;
 }
 
