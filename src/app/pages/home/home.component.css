@@ -1,0 +1,257 @@
+.middle{
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.mouse{
+  width: 30px;
+  height: 56px;
+  border: 1px solid #fff;
+  border-radius: 60px;
+}
+
+.mouse::before{
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 1.3s infinite;
+}
+
+@keyframes mouse{
+  from{
+      opacity: 1;
+      top: 8px;
+  }
+  to{
+      opacity: 1;
+      top: 40px;
+  }
+}
+
+.carousel-inner .carousel-item{
+  height: 86vh;
+}
+
+.banner1{
+  background: #000;
+  background: linear-gradient(to bottom, rgba(29, 43, 79, 0.5), rgba(2, 62, 138,0.6)), url("../../../assets/img/home/banner-2.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 86vh;
+}
+
+.banner2{
+  background: #000;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 29, 61, 0.5), rgba(0, 53, 102,0.6)), url("../../../assets/img/home/banner-1.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 86vh;
+}
+
+.carousel-caption{
+  padding-bottom: 25vh;
+}
+
+.content-caption{
+  text-align: left;
+  padding-right: 50%;
+}
+
+.carousel-caption h5{
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.carousel-caption .text-banner{
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.label-banner{
+  font-size: 14px;
+}
+
+.btn-banner{
+  background-color: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 0;
+}
+
+.btn-banner:hover{
+  background-color: #fff;
+  color: #1d2b4f;
+  font-weight: 600;
+}
+
+
+.btn-banner:focus{
+  box-shadow: 0 0 2px 1px #fff;
+}
+
+
+/***** PARTE 1 *****/
+
+.services{
+  /*background-color: #f2f5fa;*/
+}
+
+.title-training{
+  font-weight: 600;
+}
+
+.card{
+  border-radius: 0;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+
+.icon img{
+  width: 40px;
+}
+
+
+.cotizacion .content-img {
+  display: flex;
+  align-items: flex-end;
+}
+
+.cotizacion .content-img img{
+  width: 480px;
+}
+
+.cotizacion .title-cotiza{
+  font-weight: 600;
+  color: #1d2b4f;
+}
+
+.cotizacion .title-cotiza::after{
+  content: '';
+  display: block;
+  height: 3px;
+  width: 8%;
+  position: relative;
+  top: 5px;
+  left: 4%;
+  background-color: #0575E6;
+}
+
+input, textarea{
+  font-size: 14px;
+}
+
+label{
+  font-size: 15px;
+}
+
+.btn-cotiza{
+  color: #fff;
+  border-radius: 0;
+  background-color: #0575E6;
+  font-size: 14px;
+}
+
+.btn-cotiza:hover{
+  background-color: #0054a8;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1150px){
+  .cotizacion .content-img img{
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 999px) {
+  .carousel-caption{
+      padding-bottom: 24vh;
+  }
+
+  .carousel-caption h5{
+      font-size: 30px;
+  }
+
+  .middle{
+      top: 88%;
+  }
+
+  .carousel-caption .text-banner{
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .content-caption{
+    text-align: left;
+    padding-right: 40%;
+  }
+
+  .cotizacion .content-img img{
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .middle{
+      display: none;
+  }
+  .carousel-inner .carousel-item{
+      height: 50vh;
+  }
+  .banner1,.banner2,.banner3{
+      -webkit-background-size:cover;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 50vh;
+  }
+
+  .carousel-caption{
+      padding-bottom: 12vh;
+  }
+  .carousel-caption h5{
+      font-size: 22px;
+  }
+
+  .carousel-caption .text-banner{
+    display: none;
+  }
+
+  .content-caption{
+    text-align: left;
+    padding-right: 10%;
+  }
+
+  .btn-banner{
+    font-size: 14px;
+  }
+
+  .cotizacion .content-img{
+    justify-content: center;
+  }
+
+  .cotizacion .content-img img{
+    width: 300px;
+  }
+
+}

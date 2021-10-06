@@ -8,6 +8,9 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { BannerComponent } from './shared/components/banner/banner.component';
 import { ToastrModule } from 'ngx-toastr';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CotizaService } from './shared/services/cotiza.service';
 
 @NgModule({
   declarations: [
@@ -21,9 +24,14 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
     ToastrModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    CotizaService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
