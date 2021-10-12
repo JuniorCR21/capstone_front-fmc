@@ -18,5 +18,10 @@ export class NavbarComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.router.events.subscribe((evt) => {
+      if (evt instanceof NavigationEnd) {
+          window.scrollTo(0, 0);
+      }
+  });
   }
 }
