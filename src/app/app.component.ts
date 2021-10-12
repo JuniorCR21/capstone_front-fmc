@@ -16,10 +16,10 @@ export class AppComponent implements OnInit{
     this.router.events.forEach((event) => {
       if(event instanceof NavigationEnd) {
         this.path= location.pathname
-        if(location.pathname != '/'){
-          this.bannerActive = true;
+        if(location.pathname == '/' || location.pathname == '/login'){
+          this.bannerActive = false;
         }else{
-          this.bannerActive=false;
+          this.bannerActive=true;
         }
       }
     });

@@ -11,6 +11,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CotizaService } from './shared/services/cotiza.service';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CotizaService } from './shared/services/cotiza.service';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
