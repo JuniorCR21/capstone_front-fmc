@@ -1,0 +1,61 @@
+input{
+  font-size: 14px;
+}
+
+label{
+  font-size: 15px;
+}
+
+.form-control{
+  font-size: 15px;
+}
+
+.title-contact{
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.title-contact::after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 10%;
+  background-color: #0575E6;
+}
+
+.text-contact{
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 18px;
+  text-align: justify;
+  color: #9c9c9c;
+}
+
+.btn{
+  background-color: #0575E6;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 20px;
+  transition: .3s all ease-in-out;
+  font-size: 14px;
+}
+
+.btn:hover{
+  background-color: #0054a8;
+}
+
+.contact .fondoContact{
+  margin: 0;
+  background-image: url('https://micarrerauniversitaria.com/wp-content/uploads/2018/03/medicina-preventiva-7.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width:767px){
+  .fondoContact{
+    display: none;
+  }
+}

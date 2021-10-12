@@ -1,0 +1,79 @@
+.title {
+  font-weight: 600;
+  color: #1d2b4f;
+}
+.text-content-about {
+  color: #797979;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.text-about{
+  color: #0575E6;
+  font-size: 14px;
+}
+
+.text-content {
+  color: #1d2b4f;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+
+.imagenD {
+  width: 410px;
+}
+
+.primera {
+  width: 100%;
+  padding: 6% 8%;
+  background: linear-gradient(
+      to top,
+      rgba(9, 166, 243, 0.85),
+      rgba(9, 166, 243, 0.85)
+    ),
+    url("../../../assets/img/about/mision.jpg");
+}
+
+.segunda {
+  width: 100%;
+  padding: 6% 8%;
+  background: linear-gradient(
+      to top,
+      rgba(10, 133, 237, 0.85),
+      rgba(10, 133, 237, 0.85)
+    ),
+    url(../../../assets/img/about/vision.jpg);
+}
+
+.titleMV {
+  color: #fff;
+  font-weight: 600;
+}
+
+.textMV {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+  .imagenD {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  .imagenD {
+    margin-top: 26px;
+    width: 280px;
+  }
+
+  .content-img{
+    text-align: center;
+  }
+}
+

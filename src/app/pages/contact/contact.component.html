@@ -1,1 +1,87 @@
-<p>contact works!</p>
+<section class="contact pt-5 pb-5 mt-4 mb-4">
+  <div class="container">
+    <div class="card card-body p-0 border-0 shadow">
+      <div class="row">
+        <div class="col-md-6 p-md-5 p-sm-4">
+          <form [formGroup]="fContact" (submit)="send()" class="container p-4">
+            <div class="form-group mt-4">
+              <h4 class="title-contact">Contáctanos</h4>
+              <p class="text-contact">
+                Beneficios de Afiliación Online, atención de emergencias y
+                descuentos en atención con médicos especialistas y
+                odontologicos.
+              </p>
+              <label for="name">Nombres y Apellidos</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="nameInput"
+                placeholder="Nombres y Apellidos"
+                formControlName="name"
+              />
+              <small id="nameInput" class="form-text text-danger"
+                >*(Requerido)</small
+              >
+            </div>
+            <div class="form-group mt-4">
+              <label for="emailInput">Correo Electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="emailInput"
+                aria-describedby="emailHelp"
+                placeholder="Email"
+                formControlName="email"
+              />
+              <small id="emailHelp" class="form-text text-danger"
+                >*(Requerido)</small
+              >
+            </div>
+            <div class="form-group mt-4">
+              <label for="phoneInput">Telf - Celular</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phoneInput"
+                aria-describedby="phoneHelp"
+                placeholder="Teléfono o Celular"
+                formControlName="phone"
+              />
+              <small id="phoneHelp" class="form-text text-danger"
+                >*(Requerido)</small
+              >
+            </div>
+            <div class="form-group mt-4">
+              <label for="exampleFormControlTextarea1">Consulta</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="4"
+                formControlName="message"
+                placeholder="Descripción de la consulta"
+              ></textarea>
+            </div>
+            <button class="btn mt-3 mb-3" role="button">
+              <i class="fas fa-paper-plane mr-1"></i>Enviar
+            </button>
+          </form>
+        </div>
+        <div class="col-md-6 fondoContact"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="width: 100%; height: 400px">
+  <iframe
+    width="100%"
+    height="400"
+    frameborder="0"
+    scrolling="no"
+    marginheight="0"
+    marginwidth="0"
+    src="https://maps.google.com/maps?width=100%30&amp;height=800&amp;hl=es&amp;q=Venezuela%20220,%20Trujillo%2013008&t=&z=18&ie=UTF8&iwloc=&output=embed"
+  >
+  </iframe>
+</div>

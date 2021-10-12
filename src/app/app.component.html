@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
-<app-banner *ngIf="bannerActive"></app-banner>
+<app-navbar [path]="path"></app-navbar>
+<app-banner  *ngIf="bannerActive" [path]="path"></app-banner>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

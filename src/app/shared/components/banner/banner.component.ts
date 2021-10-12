@@ -1,15 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.css']
+  styleUrls: ['./banner.component.css'],
 })
 export class BannerComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  @Input() set path(_path: any){
+    this.title = this.rutas[_path];
+    this.banner = this.imgs[_path];
+  }
+  title = '';
+  banner = '';
+  rutas = {
+    '/servicios': 'Servicios',
+    '/nosotros': 'Nosotros',
+    '/capacitaciones': 'Capacitaciones',
+    '/contacto': 'Contacto',
+  };
+  imgs = {
+    '/servicios': 'banner bannerServices',
+    '/nosotros': 'banner bannerAbout',
+    '/capacitaciones': 'banner bannerTraining',
+    '/contacto': 'banner bannerContact',
   }
 
+  constructor(private router:Router) {}
+  ngOnInit(): void {
+
+  }
 }
