@@ -108,7 +108,89 @@
 /***** PARTE 1 *****/
 
 .services{
-  /*background-color: #f2f5fa;*/
+  background-color: #F5F5F5
+}
+
+#seccion-1 .text{
+  color: rgb(88, 88, 88);
+  padding: 0 10px;
+}
+
+.subtitle-about{
+  color:#C0C0C0;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+}
+
+.title-about{
+  color:#212529;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.title-about::after{
+  content: '';
+  display: block;
+  position: relative;
+  height: 2px;
+  width:20%;
+  background-color: #3CB2E7;
+  top: 8px;
+}
+
+.text-inf{
+  color: #808080;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.btn1{
+  border:1px solid #808080;
+  font-size: 14px;
+  font-weight: 300;
+  color: #808080;
+  border-radius: 0;
+}
+
+.btn1:hover{
+  background-color: #808080;
+  color: #fff;
+  transition: .3s all ease-in-out;
+}
+
+.btn2{
+  background-color: #3CB2E7;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  border-radius: 0;
+  font-weight: 600;
+}
+
+.btn2:hover{
+  background: none;
+  border:2px solid #3CB2E7;
+  color: #3CB2E7;
+  transition: .3s all ease-in-out;
+}
+
+.title-mtc{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.text-day{
+  font-size: 13px;
+  color: #808080;
+}
+
+.imgCiabu{
+  width:300px;
+  z-index: 20;
 }
 
 .title-training{
@@ -126,25 +208,47 @@
   height: 2px;
   width:8%;
   background-color: #0575E6;
-  left: 45%;
-  top: 8px;
+  left: 46%;
+  top: 10px;
 }
 
 .services .text-services{
   font-size: 15px;
   font-weight: 300;
-  color: #777777;
+  color: #6d6d6d;
 }
 
-.card{
+#mtc{
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,rgba(0, 0, 25, 0.8),rgba(0, 0, 25, 0.8)), url("https://arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/AIT3GXTC6VF43L5EASZ2RFRLZQ.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8%;
+
+}
+
+.card-day{
+  border: none;
+  background-color: #fff;
+  border: 10px solid #F1F1F1;
+}
+
+
+
+.btn-servicios{
+  margin-top: 8px;
+  color: #fff;
   border-radius: 0;
-  position: relative;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.card:hover{
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  background-color: #0575E6;
+  font-size: 14px;
 }
 
 
@@ -152,7 +256,6 @@
 .icon img{
   width: 40px;
 }
-
 
 .cotizacion .content-img {
   display: flex;
@@ -198,9 +301,50 @@ label{
   background-color: #0054a8;
 }
 
+.text-info-services{
+  font-size: 14px;
+  color: #6d6d6d;;
+}
+
+.icon-services{
+  color: #fff;
+  font-size: 20px;
+}
+
+.icon-services i{
+  background-color: #3CB2E7;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.icon-services i:hover{
+  background-color: #0983C4;
+  transition: .3s all ease-out;
+}
+
+.title-info-services{
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.title-info-services:hover {
+  color: #0983C4;
+  transition: .3s all ease-out;
+}
+
+
 @media screen and (min-width: 1000px) and (max-width: 1150px){
   .cotizacion .content-img img{
     width: 400px;
+  }
+
+  #mtc .title-mtc{
+    font-size: 24px;
+  }
+
+  .imgCiabu{
+    width:260px;
+    z-index: 20;
   }
 }
 
@@ -217,6 +361,10 @@ label{
       top: 88%;
   }
 
+  #mtc .title-mtc{
+    font-size: 24px;
+  }
+
   .carousel-caption .text-banner{
     font-size: 14px;
     font-weight: 300;
@@ -230,6 +378,12 @@ label{
   .cotizacion .content-img img{
     width: 320px;
   }
+
+  .imgCiabu{
+    width:260px;
+    z-index: 20;
+  }
+
 }
 
 @media only screen and (max-width: 767px){
@@ -263,6 +417,14 @@ label{
     padding-right: 10%;
   }
 
+  #mtc{
+    height: 240px;
+  }
+
+  .title-mtc{
+    font-size: 16px;
+  }
+
   .btn-banner{
     font-size: 14px;
   }
@@ -273,6 +435,11 @@ label{
 
   .cotizacion .content-img img{
     width: 300px;
+  }
+
+  .imgCiabu{
+    width:200px;
+    z-index: 20;
   }
 
 }

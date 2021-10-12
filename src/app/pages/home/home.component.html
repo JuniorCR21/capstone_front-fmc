@@ -1,20 +1,24 @@
 <!-- PARTE CARRUCEL -->
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="8000">
       <div class="banner1"></div>
       <div class="carousel-caption">
         <div class="content-caption">
-          <small class="label-banner"><i class="fas fa-user-md mr-1"></i> Profesionales al cuidado de su salud</small>
-          <h5 class="text-left">SU SALUD EN BUENAS
-            MANOS</h5>
-          <p class="text-justify text-banner mt-3" >
-            Atendemos emergencias médicas, enfermos crónicos,
-            pacientes que se recuperan de cirugías o personas
-            discapacitadas y personas de la tercera edad.
+          <small class="label-banner wow bounceInLeft"
+            ><i class="fas fa-user-md mr-1"></i> Profesionales al cuidado de su
+            salud</small
+          >
+          <h5 class="text-left wow bounceInLeft">SU SALUD EN BUENAS MANOS</h5>
+          <p class="text-justify text-banner mt-3 wow bounceInUp">
+            Atendemos emergencias médicas, enfermos crónicos, pacientes que se
+            recuperan de cirugías o personas discapacitadas y personas de la
+            tercera edad.
           </p>
-          <button class="btn btn-banner mt-3" routerLink="/contacto">
+          <button
+            class="btn btn-banner mt-3 wow bounceInUp"
+            routerLink="/contacto"
+          >
             <i class="far fa-arrow-alt-circle-right"></i>
             Contáctanos
           </button>
@@ -25,12 +29,14 @@
       <div class="banner2"></div>
       <div class="carousel-caption">
         <div class="content-caption">
-          <small class="label-banner"><i class="fas fa-user-md mr-1"></i> Examenes Ocupacionales</small>
+          <small class="label-banner"
+            ><i class="fas fa-user-md mr-1"></i> Examenes Ocupacionales</small
+          >
           <h5 class="text-left">SALUD OCUPACIONAL</h5>
-          <p class="text-justify text-banner mt-3" >
-            La finalidad de estos exámenes no es más que proteger y
-            promover la seguridad y salud de los trabajadores, así
-            como generar ambientes de trabajo saludables.
+          <p class="text-justify text-banner mt-3">
+            La finalidad de estos exámenes no es más que proteger y promover la
+            seguridad y salud de los trabajadores, así como generar ambientes de
+            trabajo saludables.
           </p>
           <button class="btn btn-banner mt-3" routerLink="/contacto">
             <i class="far fa-arrow-alt-circle-right"></i>
@@ -40,88 +46,288 @@
       </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+  <a
+    class="carousel-control-prev"
+    href="#carouselExampleCaptions"
+    role="button"
+    data-slide="prev"
+  >
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+  <a
+    class="carousel-control-next"
+    href="#carouselExampleCaptions"
+    role="button"
+    data-slide="next"
+  >
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
 
 <div class="middle">
-  <div class="mouse">
-  </div>
+  <div class="mouse"></div>
 </div>
 
 <!-- PARTE 1 -->
+
+<section id="seccion-2">
+  <div class="container pt-5">
+    <div class="row pt-4">
+      <div class="col-md-6 col-lg-4 pr-4 mt-4">
+        <div class="card card-body card-day wow fadeInLeft">
+          <h6>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-clock"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#0663C3"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="12" r="9" />
+              <polyline points="12 7 12 12 15 15" />
+            </svg>
+            Horario
+          </h6>
+          <div class="d-flex justify-content-between">
+            <p class="text-day">Lunes - Viernes</p>
+            <p class="text-day">7:00 a.m - 6:00 p.m</p>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <p class="text-day">Sábados</p>
+            <p class="text-day">7:00 a.m - 1:00 p.m</p>
+          </div>
+          <hr />
+          <h6 class="mt-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-report-medical"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#0663C3"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"
+              />
+              <rect x="9" y="3" width="6" height="4" rx="2" />
+              <line x1="10" y1="14" x2="14" y2="14" />
+              <line x1="12" y1="12" x2="12" y2="16" />
+            </svg>
+            ¿Necesita ayuda?
+          </h6>
+          <p class="text-day">
+            Contáctanos para recibir ayuda de nuestros expertos.
+          </p>
+          <button class="btn btn-sm btn2 mt-3" routerLink="/contacto">
+            <i class="far fa-envelope"></i>
+            Contacto
+          </button>
+        </div>
+      </div>
+      <article class="col-md-6 col-lg-4 pl-4 mt-4">
+        <label class="subtitle-about wow fadeInUp"
+          ><i class="fas fa-star-of-life"></i> Family Medical Center
+        </label>
+        <h3 class="title-about wow fadeInUp">¿QUIENES SOMOS?</h3>
+        <p class="text-justify mt-4 text-inf wow fadeInUp">
+          Somos una empresa prestadora de servicios de salud a domicilio. La
+          experiencia y conocimiento de nuestro equipo de trabajo en el manejo
+          del paciente en el hogar permite optimizar recursos y ofrecer calidez
+          y seguridad en cada servicio prestado.
+        </p>
+        <button
+          class="btn btn1 d-block ml-0 mt-4 wow fadeInUp"
+          routerLink="/nosotros"
+        >
+          <i class="fas fa-arrow-circle-right"></i> Ver más
+        </button>
+      </article>
+      <div class="col-lg-4 text-center wow fadeInRight mt-4">
+        <img
+          loading="lazy"
+          class="imgCiabu"
+          src="http://html.kodesolution.live/html/health-beauty/medical/medinova-html/v3.2/demo/images/photos/home-img.png"
+          alt="Centro de salud FMC"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mtc">
+  <h1 class="title-mtc wow fadeInLeft">
+    <span>Centro autorizado por el MTC</span><br />
+    Para la toma de Examen Médico para la obtención de Brevete
+  </h1>
+  <div>
+    <!--a class="btn btn-banner mt-3" href="https://familymedicalperu.com/servicios#mtc"-->
+    <a class="btn btn-banner mt-3" routerLink="/servicios">
+      <i class="far fa-arrow-alt-circle-right"></i>
+      Ver Más
+    </a>
+  </div>
+</section>
+
 <section class="services pt-5 pb-5">
-  <div class="container">
-    <h3 class="text-center subtitle">Nuestros Servicios</h3>
-    <p class="text-center text-services mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illum minima quos facilis blanditiis nihil dolor modi sed eos</p>
-    <div class="row mt-4">
-      <div class="col-md-3">
-        <div class="card border-0">
-          <div class="card-header p-0">
-            <img src="../../../assets/img/banner/banner-about.jpeg" width="250px" alt="">
+  <div class="container pb-4">
+    <p class="text-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-medical-cross"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#0575E6"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M13 3a1 1 0 0 1 1 1v4.535l3.928 -2.267a1 1 0 0 1 1.366 .366l1 1.732a1 1 0 0 1 -.366 1.366l-3.927 2.268l3.927 2.269a1 1 0 0 1 .366 1.366l-1 1.732a1 1 0 0 1 -1.366 .366l-3.928 -2.269v4.536a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-4.536l-3.928 2.268a1 1 0 0 1 -1.366 -.366l-1 -1.732a1 1 0 0 1 .366 -1.366l3.927 -2.268l-3.927 -2.268a1 1 0 0 1 -.366 -1.366l1 -1.732a1 1 0 0 1 1.366 -.366l3.928 2.267v-4.535a1 1 0 0 1 1 -1h2z"
+        />
+      </svg>
+    </p>
+    <h3 class="text-center subtitle wow flipInY">Nuestros Servicios</h3>
+    <p class="text-center text-services mt-5 wow flipInY">
+      Family Medical Center brinda una amplia gama de servicios médicos que su
+      empresa necesita, la mayor calidad y atención brindada que usted merece.
+    </p>
+    <div class="row mt-4 d-flex justify-content-between">
+      <div class="col-md-4 mt-4 wow fadeInUp">
+        <div class="row">
+          <div class="col-2 text-center icon-services">
+            <i class="fas fa-briefcase-medical"></i>
           </div>
-          <div class="card-body">
-            <h6 class="text-center title-training mt-2">Grupo Rocio</h6>
+          <div class="col">
+            <h6 class="title-info-services" routerLink="/servicios">
+              Servicio de Psicologia y Psiquiatría
+            </h6>
+            <p class="text-info-services">
+              Profesionales con experiencia en los problemas psicológicos.
+            </p>
           </div>
-
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card border-0">
-          <div class="card-header p-0">
-            <img src="../../../assets/img/banner/banner-about.jpeg" width="250px" alt="">
+      <div class="col-md-4 mt-4 wow fadeInUp">
+        <div class="row">
+          <div class="col-2 text-center icon-services">
+            <i class="fas fa-briefcase-medical"></i>
           </div>
-          <div class="card-body">
-            <h6 class="text-center title-training mt-2">Grupo Rocio</h6>
+          <div class="col">
+            <h6 class="title-info-services" routerLink="/servicios">
+              Administración de Medicamentos
+            </h6>
+            <p class="text-info-services">
+              Monitoreados por nuestro personal profesional.
+            </p>
           </div>
-
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card border-0">
-          <div class="card-header p-0">
-            <img src="../../../assets/img/banner/banner-about.jpeg" width="250px" alt="">
+      <div class="col-md-4 mt-4 wow fadeInUp">
+        <div class="row">
+          <div class="col-2 text-center icon-services">
+            <i class="fas fa-briefcase-medical"></i>
           </div>
-          <div class="card-body">
-            <h6 class="text-center title-training mt-2">Grupo Rocio</h6>
+          <div class="col">
+            <h6 class="title-info-services" routerLink="/servicios">
+              Procedimientos de Enfermería
+            </h6>
+            <p class="text-info-services">
+              Control de funciones vitales y/o inyectables.
+            </p>
           </div>
-
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card border-0">
-          <div class="card-header p-0">
-            <img src="../../../assets/img/banner/banner-about.jpeg" width="250px" alt="">
+    </div>
+    <div class="row mt-4 d-flex justify-content-between">
+      <div class="col-md-4 mt-4 wow fadeInUp">
+        <div class="row">
+          <div class="col-2 text-center icon-services">
+            <i class="fas fa-briefcase-medical"></i>
           </div>
-          <div class="card-body">
-            <h6 class="text-center title-training mt-2">Grupo Rocio</h6>
+          <div class="col">
+            <h6 class="title-info-services" routerLink="/servicios">
+              Toma de Electrocardiograma
+            </h6>
+            <p class="text-info-services">
+              Electrocardiograma en su domicilio en un trazo digital.
+            </p>
           </div>
-
+        </div>
+      </div>
+      <div class="col-md-4 mt-4 wow fadeInUp">
+        <div class="row">
+          <div class="col-2 text-center icon-services">
+            <i class="fas fa-briefcase-medical"></i>
+          </div>
+          <div class="col">
+            <h6 class="title-info-services" routerLink="/servicios">
+              Realización de Ecografías
+            </h6>
+            <p class="text-info-services">
+              Ecografías en la comodidad de su domicilio.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-4 wow fadeInUp">
+        <div class="row">
+          <div class="col-2 text-center icon-services">
+            <i class="fas fa-briefcase-medical"></i>
+          </div>
+          <div class="col">
+            <h6 class="title-info-services" routerLink="/servicios">Rayos X</h6>
+            <p class="text-info-services">
+              Nuestro Servicio de rayos x con técnicos de alta calidad.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cotizacion pt-5">
+<section class="cotizacion pt-5" id="cotizacion">
   <div class="container">
     <div class="row mt-4">
       <div class="col-md-7">
         <h4 class="title-cotiza mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-medical-cross" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1d2b4f" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M13 3a1 1 0 0 1 1 1v4.535l3.928 -2.267a1 1 0 0 1 1.366 .366l1 1.732a1 1 0 0 1 -.366 1.366l-3.927 2.268l3.927 2.269a1 1 0 0 1 .366 1.366l-1 1.732a1 1 0 0 1 -1.366 .366l-3.928 -2.269v4.536a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-4.536l-3.928 2.268a1 1 0 0 1 -1.366 -.366l-1 -1.732a1 1 0 0 1 .366 -1.366l3.927 -2.268l-3.927 -2.268a1 1 0 0 1 -.366 -1.366l1 -1.732a1 1 0 0 1 1.366 -.366l3.928 2.267v-4.535a1 1 0 0 1 1 -1h2z" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-medical-cross"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#1d2b4f"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M13 3a1 1 0 0 1 1 1v4.535l3.928 -2.267a1 1 0 0 1 1.366 .366l1 1.732a1 1 0 0 1 -.366 1.366l-3.927 2.268l3.927 2.269a1 1 0 0 1 .366 1.366l-1 1.732a1 1 0 0 1 -1.366 .366l-3.928 -2.269v4.536a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-4.536l-3.928 2.268a1 1 0 0 1 -1.366 -.366l-1 -1.732a1 1 0 0 1 .366 -1.366l3.927 -2.268l-3.927 -2.268a1 1 0 0 1 -.366 -1.366l1 -1.732a1 1 0 0 1 1.366 -.366l3.928 2.267v-4.535a1 1 0 0 1 1 -1h2z"
+            />
           </svg>
           Cotiza Aquí
         </h4>
-        <form [formGroup]="fContact"
-        (submit)="send()" class="container">
+        <form [formGroup]="fContact" (submit)="send()" class="container">
           <div class="form-row">
             <div class="col-md-6 mb-3">
               <label for="name">Nombres y Apellidos</label>
@@ -177,7 +383,6 @@
                 placeholder="Provincia"
                 formControlName="provincia"
               />
-
             </div>
           </div>
           <div class="form-row">
@@ -221,7 +426,7 @@
           </div>
           <div class="form-row">
             <div class="col-md-6 mb-4">
-              <button class="btn mt-3 mb-3 btn-cotiza" role="button">
+              <button class="btn mt-3 mb-3 btn-cotiza">
                 <i class="fas fa-paper-plane mr-1"></i>Enviar Cotización
               </button>
             </div>
@@ -229,9 +434,12 @@
         </form>
       </div>
       <div class="col-md-5 content-img">
-        <img src="http://cmedicolaboral.com/wp-content/uploads/2020/06/Doctor-2.png" alt="">
+        <img
+          class="wow fadeInRight"
+          src="http://cmedicolaboral.com/wp-content/uploads/2020/06/Doctor-2.png"
+          alt=""
+        />
       </div>
     </div>
   </div>
 </section>
-
