@@ -14,6 +14,12 @@ export class NavbarComponent implements OnInit {
     this.ruta = _path;
   }
 
+  rutas = {
+    '/servicios': '/servicios',
+    '/salud-ocupacional': '/salud-ocupacional',
+    '/sucamec' : '/sucamec'
+  };
+
   constructor(private router: Router) { }
 
 
