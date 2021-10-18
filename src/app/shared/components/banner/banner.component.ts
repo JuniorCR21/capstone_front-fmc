@@ -18,12 +18,14 @@ export class BannerComponent implements OnInit {
     '/nosotros': 'Nosotros',
     '/capacitaciones': 'Capacitaciones',
     '/contacto': 'Contacto',
+    '/salud-ocupacional': 'Salud Ocupacional',
   };
   imgs = {
     '/servicios': 'banner bannerServices',
     '/nosotros': 'banner bannerAbout',
     '/capacitaciones': 'banner bannerTraining',
     '/contacto': 'banner bannerContact',
+    '/salud-ocupacional': 'banner bannerOcupacional',
   }
 
   constructor(private router:Router) {}

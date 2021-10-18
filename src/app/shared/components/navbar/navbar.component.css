@@ -45,6 +45,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
+  margin-bottom: 6px;
   border-color: #fff;
   background-color: #3CB2E7;
   position: relative;
@@ -67,6 +68,7 @@
 .navbarLg .item-nav .div-nav .activo{
   width: 8px;
   height: 8px;
+  margin-bottom: 6px;
   border-radius: 50%;
   border-color: #fff;
   background-color: #0575E6;
@@ -74,6 +76,39 @@
   left: 48%;
 }
 
+.div-services{
+  position: relative;
+}
+
+.drop-services-ul{
+  position: absolute;
+  background-color: #fff;
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 17px 17px 7px 17px;
+  display: none;
+  transition: .2s all ease-in-out;
+}
+
+.drop-services-ul li{
+  list-style: none;
+  font-size: 14px;
+  width: 100%;
+  padding: 5px;
+  color: rgb(139, 139, 139);
+  margin-bottom: 10px;
+}
+
+.drop-services-ul li:hover{
+  background-color: #0983C4;
+  color: #fff;
+  transition: .2s all ease-in-out;
+}
+
+.div-services:hover .drop-services-ul{
+  display: initial;
+  transition: .2s all ease-in-out;
+}
 
 .content-navbar{
   display: flex;
@@ -101,6 +136,10 @@
 
   .pre-nav{
     height: 10px;
+  }
+
+  .nav-link, .dropdown-item{
+    font-size: 14px;
   }
 
 }

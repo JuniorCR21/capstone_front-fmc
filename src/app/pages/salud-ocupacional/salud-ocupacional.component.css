@@ -1,0 +1,119 @@
+.title , .subtitle{
+  font-weight: 600;
+}
+
+.text-content{
+  color: #6e6e6e;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.title::after{
+  content: '';
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 10%;
+  background-color: #0575e6;
+  top: 4px;
+  left: 45%;
+}
+
+.imgOcupacional{
+  width: 380px;
+}
+
+.btn-ocupacional{
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 0;
+  color: #fff;
+  background-color: #0575E6;
+}
+
+.btn-ocupacional:hover{
+  background-color: #0054a8;
+}
+
+.item-ocupacional{
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(5, 117, 230, 0.75),
+      rgba(5, 117, 230, 0.75)
+    ),
+    url(https://www.oips.com.co/wp-content/uploads/2018/11/seguridad-y-salud-en-el-trabajo-importancia-de-los-protocolos-de-seguridad.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item-ocupacional .card-body{
+  position: relative;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.item-ocupacional .circle-card-1,.circle-card-2,.circle-card-3{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: -30px;
+  left: 39%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-ocupacional .circle-card-1{
+  color: #008BBC;
+}
+
+.item-ocupacional .circle-card-2{
+  color: #31ABC9;
+}
+
+.item-ocupacional .circle-card-3{
+  color: #41AF97;
+}
+
+.title-card{
+  font-weight: 600;
+  color: #565659;
+}
+
+.text-card{
+  color: #6e6e6e;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.card-body:hover .circle-card-1{
+  background-color: #008BBC;
+  color: #fff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: .3s all ease-in-out;
+}
+
+.card-body:hover .circle-card-2{
+  background-color: #31ABC9;
+  color: #fff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: .3s all ease-in-out;
+}
+
+.card-body:hover .circle-card-3{
+  background-color: #41AF97;
+  color: #fff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: .3s all ease-in-out;
+}
+
+@media screen and (max-width: 767px){
+  .imgOcupacional{
+    width: 250px;
+  }
+}

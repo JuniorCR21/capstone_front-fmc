@@ -10,12 +10,12 @@ const routes: Routes = [
     path:'', component: HomeComponent
   },
   {
-    path: 'login',
-    loadChildren: () => import('./pages/login/login.module').then(mod => mod.LoginModule)
-  },
-  {
     path:'nosotros',
     loadChildren: () => import('./pages/about/about.module').then(mod => mod.AboutModule)
+  },
+  {
+    path:'salud-ocupacional',
+    loadChildren: () => import('./pages/salud-ocupacional/salud-ocupacional.module').then(mod => mod.SaludOcupacionalModule)
   },
   {
     path:'contacto',
