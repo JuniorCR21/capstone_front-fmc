@@ -41,6 +41,12 @@
   background-repeat: no-repeat;
 }
 
+.bannerSucamec{
+  background: linear-gradient(to top, rgba(0, 24, 69, 0.85),rgba(0, 40, 85, 0.85)), url('../../../../assets/img/home/sucamec.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .banner-title{
   font-size: 40px;

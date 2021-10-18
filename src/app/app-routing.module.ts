@@ -14,20 +14,24 @@ const routes: Routes = [
     loadChildren: () => import('./pages/about/about.module').then(mod => mod.AboutModule)
   },
   {
-    path:'salud-ocupacional',
-    loadChildren: () => import('./pages/salud-ocupacional/salud-ocupacional.module').then(mod => mod.SaludOcupacionalModule)
-  },
-  {
-    path:'contacto',
-    loadChildren: () => import('./pages/contact/contact.module').then(mod => mod.ContactModule)
-  },
-  {
     path:'servicios',
     loadChildren: () => import('./pages/services/services.module').then(mod => mod.ServicesModule)
   },
   {
+    path:'salud-ocupacional',
+    loadChildren: () => import('./pages/salud-ocupacional/salud-ocupacional.module').then(mod => mod.SaludOcupacionalModule)
+  },
+  {
+    path:'sucamec',
+    loadChildren: () => import('./pages/sucamec/sucamec.module').then(mod => mod.SucamecModule)
+  },
+  {
     path:'capacitaciones',
     loadChildren: () => import('./pages/training/training.module').then(mod => mod.TrainingModule)
+  },
+  {
+    path:'contacto',
+    loadChildren: () => import('./pages/contact/contact.module').then(mod => mod.ContactModule)
   },
   {
     path:'**',
