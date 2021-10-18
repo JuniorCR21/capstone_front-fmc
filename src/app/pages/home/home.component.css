@@ -220,7 +220,7 @@
 
 #mtc{
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left,rgba(0, 0, 25, 0.8),rgba(0, 0, 25, 0.8)), url("https://arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/AIT3GXTC6VF43L5EASZ2RFRLZQ.jpg");
+  background: linear-gradient(to left,rgba(0, 0, 25, 0.7),rgba(0, 0, 25, 0.7)), url("https://arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/AIT3GXTC6VF43L5EASZ2RFRLZQ.jpg");
   -webkit-background-size:cover;
   background-size: cover;
   background-position: center top;
@@ -232,7 +232,22 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 8%;
+}
 
+#sucamec{
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,rgba(0, 0, 25, 0.7),rgba(0, 0, 25, 0.7)), url("../../../assets/img/home/sucamec.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8%;
 }
 
 .card-day{
@@ -330,6 +345,11 @@ label{
 .title-info-services:hover {
   color: #0983C4;
   transition: .3s all ease-out;
+}
+
+.text-sucamec{
+  font-size: 15px;
+  color: #fff;
 }
 
 
@@ -440,6 +460,12 @@ label{
   .imgCiabu{
     width:200px;
     z-index: 20;
+  }
+
+  .text-sucamec{
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
   }
 
 }

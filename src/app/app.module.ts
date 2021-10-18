@@ -18,7 +18,7 @@ import { CotizaService } from './shared/services/cotiza.service';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
   ],
   imports: [
     BrowserModule,

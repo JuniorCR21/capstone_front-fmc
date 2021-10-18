@@ -19,10 +19,24 @@
         <div class="activo" *ngIf="ruta === '/nosotros'"></div>
         <div class="circle" *ngIf="ruta !== '/nosotros'"></div>
       </div>
-      <div class="div-nav">
-        <a routerLink="/servicios">Servicios</a>
-        <div class="activo" *ngIf="ruta === '/servicios'"></div>
-        <div class="circle" *ngIf="ruta !== '/servicios'"></div>
+      <div class="div-nav div-services">
+        <a>Servicios</a>
+        <div class="activo" *ngIf="ruta === rutas[ruta]"></div>
+        <div class="circle" *ngIf="ruta !== rutas[ruta]"></div>
+          <ul class="drop-services-ul">
+            <li routerLink="/servicios">
+              <i class="fas fa-user-md mr-1 pl-1"></i>
+              Servicios Generales
+            </li>
+            <li routerLink="/salud-ocupacional">
+              <i class="fas fa-user-md mr-1 pl-1"></i>
+              Salud Ocupacional
+            </li>
+            <li routerLink="/sucamec">
+              <i class="fas fa-user-md mr-1 pl-1"></i>
+              SUCAMEC
+            </li>
+          </ul>
       </div>
       <div class="div-nav">
         <a routerLink="/capacitaciones">Capacitaciones</a>
@@ -35,7 +49,7 @@
         <div class="circle" *ngIf="ruta !== '/contacto'"></div>
       </div>
     </div>
-    <a href="https://capstone.familymedicalperu.com/#cotizacion" class="btn btn-primary btn-sm"><i class="fas fa-hand-holding-medical"></i> Cotiza Aquí</a>
+    <a href="https://familymedicalperu.com/#cotizacion" class="btn btn-primary btn-sm"><i class="fas fa-hand-holding-medical"></i> Cotiza aquí</a>
   </div>
 </nav>
 
@@ -70,13 +84,23 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav mr-auto">
-        <a class="nav-link mt-3" routerLink="">Home</a>
+        <a class="nav-link mt-3" routerLink="">Inicio</a>
         <a class="nav-link" routerLink="/nosotros" routerLinkActive="active">Nosotros</a>
-        <a class="nav-link" routerLink="/servicios" routerLinkActive="active">Servicios</a>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLinkActive="active" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servicios
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" style="cursor: pointer;" routerLink="/servicios">Servicios Generales</a>
+            <hr class="m-1 p-0">
+            <a class="dropdown-item" style="cursor: pointer;" routerLink="/servicios">Salud Ocupacional</a>
+            <hr class="m-1 p-0">
+            <a class="dropdown-item" style="cursor: pointer;" routerLink="/sucamec">SUCAMEC</a>
+          </div>
+        </div>
         <a class="nav-link" routerLink="/capacitaciones" routerLinkActive="active">Capacitaciones</a>
         <a class="nav-link" routerLink="/contacto" routerLinkActive="active">Contacto</a>
       </div>
-      <button class="btn btn-primary mt-2 mb-3">Iniciar Sesión</button>
     </div>
   </div>
 </nav>

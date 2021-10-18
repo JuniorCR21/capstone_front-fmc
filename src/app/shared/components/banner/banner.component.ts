@@ -18,12 +18,16 @@ export class BannerComponent implements OnInit {
     '/nosotros': 'Nosotros',
     '/capacitaciones': 'Capacitaciones',
     '/contacto': 'Contacto',
+    '/salud-ocupacional': 'Salud Ocupacional',
+    '/sucamec': 'SUCAMEC',
   };
   imgs = {
     '/servicios': 'banner bannerServices',
     '/nosotros': 'banner bannerAbout',
     '/capacitaciones': 'banner bannerTraining',
     '/contacto': 'banner bannerContact',
+    '/salud-ocupacional': 'banner bannerOcupacional',
+    '/sucamec': 'banner bannerSucamec',
   }
 
   constructor(private router:Router) {}

@@ -1,8 +1,8 @@
 .footer{
   width: 100%;
-  background-color: #0B152A;
+  background-color: #09142c;
   color: #fff;
-  background: linear-gradient(to top, rgba(10, 19, 40, 0.9),rgba(10, 19, 40, 0.9)),url('../../../../assets/img/footer/fondo.jpg');
+  background: linear-gradient(to top, rgba(8, 15, 36, 0.9),rgba(8, 15, 36, 0.9)),url('../../../../assets/img/footer/fondo.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
