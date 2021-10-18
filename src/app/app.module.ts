@@ -21,7 +21,7 @@ import { CotizaService } from './shared/services/cotiza.service';
     BannerComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
